@@ -8,19 +8,23 @@
 }
 
 * {
+    font-family: dana, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 p, h2 {
-    font-family: dana, sans-serif;
     font-weight: 500;
     text-align: center;
 }
 
 a:link, a:visited, a:hover, :active {
     text-decoration: none;
+}
+
+.green-status {
+    color: #00b241 !important;
 }
 
 .root{
@@ -94,8 +98,34 @@ a:link, a:visited, a:hover, :active {
 
 .payment-text {
     color: #9b9b9b;
-    font-size: 12px;
-    margin: 0;
+    font-size: 14px;
+    margin: 0 0 30px 0;
+}
+
+.payment-detail-info {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    width:91vw;
+    font-size: 14px;
+    max-width: 400px;
+    padding: 15px;
+    color: #9b9b9b;
+}
+
+.payment-detail-info >div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: center;
+}
+
+.payment-detail-info >div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.payment-detail-info span {
+    width: 50%;
+    text-align: center;
+    color: #9b9b9b;
 }
 
 /* styling the logo in the middle of the error page */
